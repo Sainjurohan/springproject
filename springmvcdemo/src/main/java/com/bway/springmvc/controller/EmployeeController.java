@@ -1,5 +1,4 @@
- package com.bway.springmvc.controller;
-
+package com.bway.springmvc.controller;
 
 import javax.servlet.http.HttpSession;
 
@@ -91,6 +90,8 @@ public class EmployeeController {
 		return "home";
 
 	}
+	
+	//fetch all employee data and display in home page
 
 	@RequestMapping(value = "/home")
 	public String home(Model model, HttpSession session) {
